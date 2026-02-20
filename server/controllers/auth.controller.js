@@ -46,7 +46,11 @@ const login = catchAsync(async (req, res, next) => {
 });
 
 const logout = catchAsync(async (req, res) => {
-    res.clearCookie('jwt');
+    res.clearCookie('jwt', {
+        httpOnly: true,
+        secure: true,
+        sameSite: 'None'
+    });
     res.status(200).send();
 });
 
