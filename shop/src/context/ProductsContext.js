@@ -4,7 +4,7 @@ const ProductsContext = createContext();
 
 export const useProducts = () => useContext(ProductsContext);
 
-const API_URL = 'http://192.168.0.14:3000/api';
+const API_URL = 'https://shopapp-21s6.onrender.com/api';
 
 export const ProductsProvider = ({ children }) => {
     const [products, setProducts] = useState([]);

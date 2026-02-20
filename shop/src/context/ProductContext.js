@@ -5,7 +5,7 @@ export const ProductContext = createContext();
 
 export const useProduct = () => useContext(ProductContext);
 
-const API_URL = 'http://192.168.0.14:3000/api';
+const API_URL = 'https://shopapp-21s6.onrender.com/api';
 
 // const API_URL = Platform.OS === 'ios' ? 'http://192.168.0.9:3000/api' : 'http://10.0.2.2:3000/api';
 
