@@ -67,7 +67,7 @@ export default function Dashboard() {
     if (!confirm('Are you sure you want to delete this product?')) return;
 
     try {
-      await fetch(api(`/api/products/${id}`), {
+      await fetch(`${API_URL}/products/${id}`, {
         method: 'DELETE',
         credentials: 'include',
       });
